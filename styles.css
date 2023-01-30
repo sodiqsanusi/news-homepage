@@ -30,7 +30,9 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: 'Inter';
   src: local('Inter'),
+       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2-variations'),
        url('/assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff-variations'),
        url('/assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -78,4 +80,22 @@ button{
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+.midContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+.main--sections{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  padding: 1.5em 0;
+}.main--sections h1{
+  color: var(--veryDarkBlue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 1px;
 }
