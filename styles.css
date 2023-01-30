@@ -26,3 +26,30 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 /* End of Reset */
+/* Addition of local font */
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'),
+       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
+  font-weight: 100 1000;
+  font-style: normal;
+}
+i, em, .italic {
+	/* Should be font-style: italic; */
+	font-variation-settings: 'ital' 1;
+}.slanted {
+	/* Should be font-style: oblique 10deg; */
+	font-variation-settings: 'slnt' 10;
+}
+/* 
+* Could have added .eot, .ttf & .svg fonts, but it seems present best practices advise just these two file formats
+* https://web.dev/reduce-webfont-size/#web-font-formats for more info
+*/
+
+*{
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  /** Font kerning is important to keep consistency in the spacing of the fonts */
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
