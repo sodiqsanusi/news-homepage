@@ -80,6 +80,8 @@ button{
   outline: none;
   border: none;
   background-color: transparent;
+}#nav--hamburgerBtn:focus, #nav--hamburgerBtn:hover{
+  outline: 1px solid var(--veryDarkBlue);
 }
 
 .midContainer{
@@ -186,4 +188,42 @@ button{
   color: var(--darkGrayishBlue);
   font-size: .9rem;
   line-height: 1.75;
+}
+
+.nav--mobilePanel{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--offWhite);
+  min-height: 100vh;
+  width: 70%;
+  padding: 1.5em 1em;
+  box-shadow: 2px 2px 0 100vw rgba(0, 0, 0, 0.65);
+  display: none ;
+}.nav--mobilePanel > div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 5em;
+}#nav--mobilePanelClose{
+  background-color: transparent;
+  border: none;
+  transition: transform .5s;
+}#nav--mobilePanelClose:hover, #nav--mobilePanelClose:focus{
+  transform: scale(90%);
+  outline: 1px solid var(--veryDarkBlue);
+}
+
+.mobileNav--links{
+  list-style: none;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25em;
+}.mobileNav--links a{
+  text-decoration: none;
+  color: var(--veryDarkBlue);
+  font-size: 1.15rem;
+}.mobileNav--links a:hover, .mobileNav--links a:focus{
+  color: var(--softRed);
 }
