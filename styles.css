@@ -258,5 +258,28 @@ button{
   }
   .midContainer{
     flex-direction: row;
+    justify-content: space-between;
+  }.midContainer main{
+    width: 65%;
+  }.midAside{
+    width: 30%;
+  }.main--sections{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2em;
+  }.main--sections h1{
+    width: 45%;
+    font-weight: 800;
+    font-size: min(5vw, 3.5rem);
+  }.main--article{
+    width: 50%;
+  }.main--article p{
+    margin-bottom: 2em;
+  }.main--article button{
+    width: 70%;
+  }
+  .midAside{
+    padding: 2em 1.5em;
   }
 }

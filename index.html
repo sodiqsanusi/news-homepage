@@ -36,7 +36,13 @@
 
     <div class="midContainer">
       <main>
-        <div class="main--image"><img src="./assets/images/image-web-3-mobile.jpg" alt="" role="presentation" aria-hidden="true"></div>
+        <div class="main--image" role="presentation" aria-hidden="true">
+          <picture>
+            <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 699px)">
+            <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 700px)">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+          </picture>
+        </div>
         <section class="main--sections">
           <h1>The Bright Future of Web 3.0?</h1>
           <article class="main--article">
