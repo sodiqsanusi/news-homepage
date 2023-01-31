@@ -111,7 +111,7 @@ button{
   border: none;
   background-color: var(--softRed);
   width: 55%;
-  max-width: 250px;
+  max-width: 200px;
   color: var(--offWhite);
   padding: 1.25em 0;
   text-transform: uppercase;
@@ -281,5 +281,16 @@ button{
   }
   .midAside{
     padding: 2em 1.5em;
+  }
+
+  .footerArticles{
+    flex-direction: row;
+    justify-content: space-between;
+  }.footerArticles > div{
+    width: 30%;
+  }.footerArticles--article p:first-of-type{
+    font-size: 1.5rem;
+  }.footerArticles--article a{
+    font-size: 1rem;
   }
 }
