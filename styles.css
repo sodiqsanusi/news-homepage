@@ -80,6 +80,8 @@ button{
   outline: none;
   border: none;
   background-color: transparent;
+}#nav--hamburgerBtn:focus, #nav--hamburgerBtn:hover{
+  outline: 1px solid var(--veryDarkBlue);
 }
 
 .midContainer{
@@ -196,6 +198,8 @@ button{
   min-height: 100vh;
   width: 70%;
   padding: 1.5em 1em;
+  box-shadow: 2px 2px 0 100vw rgba(0, 0, 0, 0.65);
+  display: none ;
 }.nav--mobilePanel > div{
   display: flex;
   justify-content: flex-end;
@@ -207,6 +211,7 @@ button{
   transition: transform .5s;
 }#nav--mobilePanelClose:hover, #nav--mobilePanelClose:focus{
   transform: scale(90%);
+  outline: 1px solid var(--veryDarkBlue);
 }
 
 .mobileNav--links{
@@ -214,7 +219,7 @@ button{
   padding-left: 5%;
   display: flex;
   flex-direction: column;
-  row-gap: 1.5em;
+  row-gap: 1.25em;
 }.mobileNav--links a{
   text-decoration: none;
   color: var(--veryDarkBlue);
