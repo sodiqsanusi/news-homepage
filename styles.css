@@ -30,12 +30,13 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: 'Inter';
   src: local('Inter'),
-       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2-variations'),
-       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
-       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff-variations'),
-       url('/assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
+       url('./assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2-variations'),
+       url('./assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+       url('./assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff-variations'),
+       url('./assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 i, em, .italic {
 	/* Should be font-style: italic; */
