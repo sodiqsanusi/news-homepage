@@ -66,6 +66,7 @@ Might have said it earlier, but this was the first time I used self-hosted fonts
 ### Useful resources
 
 - [The Easy Way to Add Fonts to Your Website (Including Custom Fonts) - Pagecloud](https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website) - This was very helpful, especially the "Webfont Generator" tool they shared in the article. Solid resource to use if you're new to using custom fonts and all.
+- [Reduce web font size - web.dev](https://web.dev/reduce-webfont-size/) - First problem was implementing it, another was optimizing the usage of the custom fonts. Google Fonts CDNs take a lot of heavy lifting honestly, this was a quick and easily understandable read anyways, so all's good. 
 
 ## Author
 
